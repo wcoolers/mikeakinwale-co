@@ -1,0 +1,135 @@
+:root {
+    --primary: white;
+    --secondary: rgba(255,255,255, 1);
+    --accent: #ffa31a;
+  } 
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    box-sizing: border-box;
+    /* background-color: #ffeead; */
+}
+body .bg {
+    min-height: 100vh;
+    background-image: url(./images/bdg-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body .container {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    padding: 1rem;
+    padding-top: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    /* position: fixed; */
+}
+header .logo {
+    color: var(--primary);
+    font-family: sans-serif;
+    margin-left: 5rem;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+header .logo span {
+    color: var(--accent);
+    font-family: serif;
+    font-size: 29px;
+
+}
+header nav ul {
+    display: flex;
+
+}
+header nav ul li {
+   list-style: none;
+   margin: 1.6rem
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding: 0.6rem;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+header nav ul li a:hover, header nav ul li .active {
+    background-color: var(--secondary);
+    color: black;
+    transform: translate(0.4s)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary);
+    width: 100%;
+    min-height: 70vh;
+}
+main .text h1 {
+    font-size: 78px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+main .text .btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    /* border: 1px solid red; */
+}
+
+main .text .btns a {
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 3px solid var(--accent);
+    text-align: center;
+    width: 200px;
+    background: transparent;
+    /* opacity: 0.6; */
+    color: var(--accent);
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: sans-serif;
+}
+main .text .btns a span {
+    background: var(--accent);
+    transition: 0.5s;
+    height: 100%;
+    width: 0%;    
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    /* color: white; */
+}
+main .text .btns a:hover span {
+    width: 100%;
+    /* border: 9px solid red; */
+}
+main .text .btns a:hover {
+    /* transition: 0.5s; */
+    border: 3px solid var(--accent);
+    color: var(--primary);
+    color: black;
+    
+    /* border: none; */
+}
