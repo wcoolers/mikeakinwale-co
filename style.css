@@ -116,7 +116,7 @@ main .text .btns {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     
 }
 

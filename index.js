@@ -3,6 +3,7 @@ const icon = document.querySelector('.icon')
 const demoPage = document.querySelector('.demo-page')
 const mainPage = document.querySelector('main')
 const logo = document.querySelector('.logo')
+const btns = document.querySelectorAll('.hero-btn')
 
 
 logo.addEventListener('click', () => {
@@ -34,6 +35,11 @@ icon.addEventListener('click', ()=> {
         switchCrossForBar(icon.classList)
     }   
 })
+btns.forEach(btn => (btn.addEventListener('click', () => {
+    demoPage.style.display = 'flex';
+    mainPage.style.display = 'none';
+})))
+
 function switchBarForCross(el) {
     el.remove('fa-bars')
     el.remove('fa-2x')
